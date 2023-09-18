@@ -50,4 +50,54 @@ print("kth min and max values")
 # k= int(input())
 # print(a[k])
     
+print("sort 0, 1 and 2")
+# array =[0,2,1,0,0,0,1,0,2,0,1,2]
+# print(array)
 
+# for i in range(0, len(array)):
+#     for j in range(i+1, len(array)):
+#         if array[i] > array[j]:
+#             array[i], array[j] = array[j], array[i]
+# print(array)
+            
+
+print("move all the negative to left side")
+# arr=[-4,0,9,-88,66,70,-2]
+# print(sorted(arr))
+
+
+print("find the union of 2 list")
+# def dounion(a,b):
+#     return(set(a+b))
+    
+# a = [1,2,3,4,5]
+
+# b = [2,7, 8,9]
+
+# print(dounion(a,b))
+
+print("find the intersectioon of 2 list")
+# def dointer(a,b):
+#     return(set(a).intersection(b))
+
+# a=[1,8,3,5]
+# a=sorted(a)
+# b=[1,6,8,3,6,9]
+# b=sorted(b)
+# print(dointer(a,b))
+
+
+print("cyclic rotate")
+# def rotate(array):
+#     array.insert(0,array.pop())
+
+# arr = [2,8,6,4,8]
+# rotate(arr)
+# print(arr)
+print("kadane's algo")
+def maxSubArraySum(self,arr,N):
+        a = b = arr[0]
+        for i in range(1,N):
+            a = max(arr[i]+a,arr[i])
+            b = max(a,b)
+        return b

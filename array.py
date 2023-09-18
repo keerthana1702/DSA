@@ -95,9 +95,10 @@ print("cyclic rotate")
 # rotate(arr)
 # print(arr)
 print("kadane's algo")
-def maxSubArraySum(self,arr,N):
-        a = b = arr[0]
-        for i in range(1,N):
-            a = max(arr[i]+a,arr[i])
-            b = max(a,b)
-        return b
+# def maxSubArraySum(self,arr,N):
+#         a = b = arr[0]
+#         for i in range(1,N):
+#             a = max(arr[i]+a,arr[i])
+#             b = max(a,b)
+#         return b
+print("retern only 2 digits after float")

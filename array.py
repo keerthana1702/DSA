@@ -102,3 +102,95 @@ print("kadane's algo")
 #             b = max(a,b)
 #         return b
 print("retern only 2 digits after float")
+
+# a = float(input())
+# b = float(input())
+# su= a+b
+# print("{:.2f}".format(su))
+
+print("add and multiply with 2 functions")
+# def add_2num(a,b):
+#     sum_two= a+b
+#     return (sum_two)
+# def mul_two(sum_two,c):
+#     multi=sum_two*c
+#     return multi
+
+# number1 = int(input())
+# number2 = int(input())
+# addition = add_2num(number1, number2)
+# print(addition)
+# number3 = int(input())
+# multiplication = mul_two(addition,number3)
+# print(multiplication)
+
+
+print("find duplicate in the list")
+# from typing import List
+# class Solution:
+#     def findDuplicate(self, nums: List[int]) -> int:
+#         n = len(nums)
+#         for i in range(n-1):
+#             for j in range (i+1, n):
+#                 if nums[i] == nums[j]:
+#                     return nums[i]
+# input_str = input()
+# arr = input_str.strip('[]').split(',')
+# arr = [int(num) for num in arr]
+# solution = Solution()
+# duplicate = solution.findDuplicate(arr)
+# print(duplicate)
+
+print("simplified solution")
+
+# from typing import List
+# class solution:
+#     def findDuplicate(self, nums: List[int]) -> int:
+#         nums.sort()
+#         for i in range(1, len(nums)):
+#             if nums[i]==nums[i-1]:
+#                 return nums[i]
+#             return len(nums)
+
+
+print("palindrome number")
+# def isplind(x):
+# x = str(x)
+# return x == x[::-1]
+
+# def isPalindrome(x: int) -> bool:
+#     if x < 0 or (x != 0 and x % 10 == 0):
+#         return False
+#     mid = 0
+#     while x > mid:
+#         mid = (mid * 10) + (x % 10)
+#         x = x // 10
+#     return x == mid or x == mid // 10
+
+# input_num = int(input())
+# result = isPalindrome(input_num)
+# print(result) 
+
+print("Roman integer")
+# class Solution:
+#     def romanToInt(self, s: str) -> int:
+#         rom ={
+#             'I':1,
+#             'V':5,
+#             'X':10,
+#             'L':50,
+#             'C':100,
+#             'D':500,
+#             'M':1000
+#         }
+#         tots = 0
+#         for i in range(len(s)-1):
+#             if rom[s[i]]<rom[s[i+1]]:
+#                 tots -= rom[s[i]]
+#             else:
+#                 tots += rom[s[i]]
+#             return tots + rom[s[-1]]
+# strin = input()
+# solution = Solution()
+# fin = solution.romanToInt(strin)
+# print(fin)
